@@ -27,4 +27,7 @@ Current supported outputed formats
 
 - PDF
 
-Future development may include more output formats.
+Future development may include
+
+- EPUB
+- MOBI
