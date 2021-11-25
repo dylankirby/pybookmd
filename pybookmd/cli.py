@@ -5,9 +5,9 @@ from .generators import GENERATOR_BY_OUTPUT_FORMAT
 
 @click.command()
 @click.option('--title', prompt='Title for the book', type=str)
-@click.argument('output_format', default="pdf", type=str)
-@click.argument('chapters_dir', default="chapters", type=str)
-@click.argument('release_dir', default="release", type=str)
+@click.option('--output_format', default="pdf", type=str)
+@click.option('--chapters_dir', default="chapters", type=str)
+@click.option('--release_dir', default="release", type=str)
 def build_book(title, output_format, chapters_dir, release_dir):
 	click.echo(f"Building book with output format {output_format}")
 	try:
