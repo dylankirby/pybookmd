@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pybookmd"
-version = "1.0.6"
+version = "1.0.7"
 description = "\"Simple book building CLI for markdown based books\""
 authors = ["Dylan Kirby <dylankirbydev@outlook.com>"]
 license = "MIT"
@@ -20,4 +20,4 @@ requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
-greet = "pybookmd.cli:build_book"
+build = "pybookmd.cli:build_book"
